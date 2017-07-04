@@ -1,0 +1,28 @@
+\begin{thebibliography}{1}
+
+\bibitem{hsu2016urban}
+Li-Ta Hsu, Yanlei Gu, Yuyang Huang, and Shunsuke Kamijo.
+\newblock Urban pedestrian navigation using smartphone-based dead reckoning and
+  3-d map-aided gnss.
+\newblock {\em IEEE Sensors Journal}, 16(5):1281--1293, 2016.
+
+\bibitem{huang2016height}
+Yuyang Huang, Li-Ta Hsu, Yanlei Gu, and Shunsuke Kamijo.
+\newblock Gnss correction using altitude map and its integration with
+  pedestrian dead reckoning(submitted).
+\newblock {\em IEEE TRANSACTIONS on Intelligent Transportation Systems}, 2016.
+
+\bibitem{huang2016database}
+Yuyang Huang, Li-Ta Hsu, Yanlei Gu, Haitao Wang, and Shunsuke Kamijo.
+\newblock Database calibration for outdoor wi-fi positioning system.
+\newblock {\em IEICE TRANSACTIONS on Fundamentals of Electronics,
+  Communications and Computer Sciences}, 99(9):1683--1690, 2016.
+
+\bibitem{sat2013}
+J.C~Chen Y.Y~Huang.
+\newblock vflipnum: A local search with variable flipping frequency heuristics
+  for sat.
+\newblock {\em Proceedings of SAT Competition 2013 : Solver and Benchmark
+  Descriptions}, July 2013.
+
+\end{thebibliography}

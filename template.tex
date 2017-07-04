@@ -6,7 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
@@ -20,21 +20,23 @@
 
 % adjust the page margins
 \usepackage[scale=0.75]{geometry}
+\usepackage{fullpage}
+
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Yuyang}{Huang}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
-\address{Todai Mitaka Dormitory,E-225}{Shinkawa 6-22-20}{181-0004 Mitaka,Tokyo}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{Shirufido,RM 101}{kitazawa 3-7-8}{155-0031 Setagaya,Tokyo}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{080-4339-9496}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
-\email{huangyuyang90@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.kaisaryo.com}                         % optional, remove / comment the line if not wanted
-%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+\email{sigefriedhyy@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{kdb-m.org}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{https://www.linkedin.com/in/yuyang-huang-46360092/}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
-%\social[github]{jdoe}                              % optional, remove / comment the line if not wanted
+\social[github]{https://github.com/sigefried}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -57,34 +59,73 @@
 \makecvtitle
 
 \section{Objective}
-\cvline{}{Seeking a internship placement in Software Development or Linux System Administration}
+\cvline{}{Seeking a full-time job opportunity as an Software Engineer who works on ANY of the following field: Server side software development, Large scaled
+  distributed system development, Linux kernel Development, Or as an Site
+  reliability Engineer.}
+
+\section{Working Experience}
+\cventry{April 2016--Present}{Linux system R\&D Engineer}{Sony}{Tokyo
+Japan}{}{
+  \begin{itemize}
+    \item Work at system software R\&D groups at Sony.
+    \item Design and develop secure application framework on embedded Linux for IoT device and Robotics.
+    \item Linux kernel/Driver development and maintains for embedded
+      system platform.
+  \end{itemize}
+}
 
 \section{Education}
-\cventry{April 2014--April 2016}{M.S.}{The Univeristy of Tokyo}{Tokyo Japan}{}{Graduate school of Information Science of Technology, major in Information and Communication Engineering}
-\cventry{September 2009--July 2013}{B.Eng.}{Dong Huang University}{ShangHai China}{\textit{GPA 3.38}}{Department of Electrical Engineering, major in Electrical Engineering and Automation}  % arguments 3 to 6 can be left empty
+\cventry{October 2013--March 2016}{M.S.}{The University of Tokyo}{Tokyo
+Japan}{}{Graduate school of Information Science of Technology, major in Information and Communication Engineering}
+\cventry{September 2009--July 2013}{B.Eng.}{Dong Huang University}{ShangHai China}{}{Department of Electrical Engineering, major in Electrical Engineering and Automation}  % arguments 3 to 6 can be left empty
+
+\section{Selected Projects}
+
+\cventry{}{A high accurate pedestrian navigation system for middle and deep
+urban canyon environment}{Height Aided PNS}{C/C++,Python,Java}{}{\textbf{Techniques:} Algorithm design, Optimization, Self
+Localization, Data Visualization, GNSS, WiFi Localization, Android Programming}
+
+\cventry{}{A stochastic local search algorithm based SAT
+solver}{vflipnum}{C/C++}{}{\textbf{Techniques:} Algorithm design,
+Satisfiability \\ (This project wins the 10th place at SAT Competition 2013
+under Core Solvers,
+Sequential, Random SAT Benchmark)}
+
+\cventry{}{A cow health assessment system using Kinect.}{Cow
+Evaluator}{C/C++}{}{\textbf{Techniques:} OpenCV, Kinect \\ (This project wins
+the National 3rd Price of Intel Cup Embedded System Design Contest, July 2012)}
 
 \section{Skills}
 \cvlistitem{Algorithm design, analysis and implementation.}
-\cvlistitem{Extensive experince in various *nix system such as Debian Linux, Arch Linux, OS X, Gentoo Linux, CentOS.}
-\cvlistitem{Good experience with GNU development tools.}
-\begin{itemize}
-  \item Programming Languages:
-  \begin{itemize}
-    \item advanced level: Python, C/C++.
-    \item Intermediate level: Java,PHP,Ruby,Haskell,Perl,Html/CSS,Javascript.
-    \item Beginner's level: C\#,Scheme.
-  \end{itemize}
-\end{itemize}
+%\cvlistitem{Extensive experince in various *nix system such as Debian Linux, Arch Linux, OS X, Gentoo Linux, CentOS.}
+\cvlistitem{Strong background in Linux Kernel/Driver development, Linux system
+programming.}
+\cvlistitem{Deeply understand the Linux security and resource management
+mechanism: DAC, Capabilities, Namespace, Seccomp, Cgroups etc.}
+\cvlistitem{Good experience with large scale software development (Linux
+Kernel).}
+\cvlistitem{Good experience with container software: runC and Docker.}
+\cvlistitem{Good experience with Linux system administration.}
+\cvlistitem{Practically good knowledge of networking such as TCP/UDP/IP.}
+\cvlistitem{IDE: Visual studio, Xcode, Android studio, Intellij, Pycharm etc.}
+\cvlistitem{Editor: Vim, VsCode, Emacs.}
+\cvlistitem{Programming language: C/C++, Python, Golang, Java, Shell, Ruby, Haskell,
+Javascript.}
 
 \section{Awards}
 \cventry{July 2013}{Excellent Bachelor Thesis Award}{}{}{}{Undergraduate Thesis Title: Improving stochastic local search algorithm for solving Boolean Satisfiability Problem with new heuristic approach}
 
-\cventry{July 2012}{National 3rd Price of Intel Cup Design Contest}{}{}{}{Contest full name: Intel Cup Undergraduate Electronic Design Contest - Embedded System Design Invitational Contest}
-
+\cventry{July 2012}{National 3rd Price of Intel Cup Embedded System Design
+Contest}{}{}{}{}
 
 \nocite{*}
 \bibliographystyle{plain}
 \bibliography{publications}
+
+\vspace{5mm}
+%%
+%\noindent\rule{\textwidth}{0.4pt}
+%\textbf{The answer to the survey question:  B}
 
 %\section{Languages}
 %\cvitemwithcomment{Japanese}{NJLPT N1}{}

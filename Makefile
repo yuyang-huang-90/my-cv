@@ -8,8 +8,8 @@ TARGETS = $(PAPER).pdf view
 
 all: $(TARGETS)
 
-view:
-	open $(PAPER).pdf
+#view:
+#	open $(PAPER).pdf
 
 $(PAPER).pdf: $(PAPER).tex $(PAPER).bbl
 	$(TEX) $(PAPER).tex
