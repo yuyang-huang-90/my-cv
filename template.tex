@@ -59,9 +59,7 @@
 \makecvtitle
 
 \section{Objective}
-\cvline{}{Seeking a full-time job opportunity as a software engineer in any of the following fields: Server side software development, large scale
-  distributed system development, Linux kernel development, or as a site
-  reliability engineer.}
+\cvline{}{Seeking a full-time job opportunity as a software engineer.}
 
 \section{Work Experience}
 \cventry{April 2016--Present}{Linux system R\&D Engineer}{Sony}{Tokyo
@@ -88,19 +86,46 @@ Japan}{}{Graduate {S}chool of Information Science of Technology, Major in inform
 
 \section{Selected Projects}
 
-\cventry{}{Linux Kernel and System Security Software Development for next generation platform.}{Linux kernel and system security software development.}{C/C++,Python,Golang}{}{\textbf{Techniques:} Algorithm design, System design, Embedded system development, Linux kernel development, Containerization}
-\cventry{April 2014--March 2016}{A highly accurate pedestrian navigation system for urban canyon environment}{Height Aided PNS}{C/C++,Python,Java}{}{\textbf{Techniques:} Algorithm design, Optimization, Self
-Localization, Data Visualization, GNSS, WiFi Localization, Android Programming \\
-(This project is my master's thesis. The output of this project was sold to a
-well known company.)}
+\cventry{}{Linux Kernel and System Security Software Development for next generation platform.}{Linux kernel and system security software development.}{C/C++,Python,Golang}{}{\textbf{Techniques:}  Embedded system development, Linux kernel development, Containerization}
+\begin{itemize}
+  \item[--]{Responsible for Linux kernel and driver development for next
+    generation platforms. Reduce the kernel crash rate for around 30\% and reduce the kernel boot time for around 40\%.}
+  \item[--]{Design and implement containerization software for embedded Linux
+    platforms which have only limited resources.}
+  \item[--]{Coordinate container software work with other system middleware.}
+\end{itemize}
+
+\cventry{April 2014--March 2016}{A highly accurate pedestrian navigation system for urban canyon environment}{Height Aided PNS}{C/C++,Python,Java}{}{\textbf{Techniques:} Optimization, Self
+Localization, GNSS, Wi-Fi Localization, Android Programming}
+\begin{itemize}
+  \item[--]{Design, implement and evaluate a height aided GNSS algorithm for
+    pedestrian in urban environment under supervision of a senior researcher
+  and the professor. This method improves the mean error of GNSS localization from 17 meters to 12 meters in urban canyon.}
+  \item[--]{Integrate the height aided GNSS with PDR and Wi-Fi localization system. The integrated pedestrian navigation system could achieve around 6.5 meters mean error in urban canyon.}
+  \item[--]{This project is my master's thesis. The output of this project was sold to a well-known company.}
+\end{itemize}
+
 \cventry{August 2012--May 2013}{A stochastic local search algorithm based SAT
-solver}{vflipnum}{C/C++}{}{\textbf{Techniques:} Algorithm design,
-Satisfiability.\\
-(This project is my undergraduate thesis. The output of this project was
-published in an international conference about {SAT} problems.)}
+solver}{vflipnum}{C/C++}{}{\textbf{Techniques:}
+Satisfiability.}
+\begin{itemize}
+  \item[--]{Invent a new stochastic local search algorithm for solving SAT problem under supervision of the professor.}
+  \item[--]{This solver was submitted to SAT competition 2013 and ranked in 10 over totally 25 solvers in sequential, random SAT group.}
+  \item[--]{This project is my undergraduate thesis, which won \em{Excellent
+Bachelor's Thesis Award} in July 2013.}
+\end{itemize}
+
 \cventry{February 2012-- July 2012}{A cow health assessment system using Kinect.}{Cow
-Evaluator}{C/C++}{}{\textbf{Techniques:} OpenCV, Kinect \\ (This project won
-National 3rd Place at the Intel Cup Embedded System Design Contest, July 2012.)}
+Evaluator}{C/C++}{}{\textbf{Techniques:} OpenCV, Kinect}
+\begin{itemize}
+  \item[--]{Design, implement and evaluate an algorithm to calculate the health
+    score of the cows which could be use to classify them into 5 group. The
+  scores are calculated using images with depth data token by Kinect. The
+classification accuracy rate is around 75\%, which is a satisfiable number for
+cow farmers.}
+  \item[--]{This project won \em{3rd place at the Intel Cup Embedded System
+Design Contest} in July 2012.}
+\end{itemize}
 
 \section{Skills}
 \cvlistitem{Extensive experience in algorithm design, analysis and implementation in various fields: Mathematical optimization, Self-Localization, Operating system, Embedded system programming and Computer system security.}
@@ -122,13 +147,6 @@ Kernel).}
   experience), Haskell (3 months' experience),
 Javascript (3 months' year experience).}
 
-\section{Awards}
-\cvline{Excellent Bachelor's Thesis Award}{July 2013}
-Undergraduate Thesis Title:\em{ Improving stochastic local search algorithms for
-solving Boolean Satisfiability Problems with a new heuristic approach.}
-\newline
-
-\cvline{Awarded 3rd Price of Intel Cup Embedded System Design Contest}{July 2012}
 \nocite{*}
 \bibliographystyle{ieeetr}
 \bibliography{publications}
