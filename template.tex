@@ -26,15 +26,15 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Uyo(Yuyang)}{Ko(Huang)}
+\name{Uyo}{Ko}
 %\title{Resumé title}                               % optional, remove / comment the line if not wanted
 %\address{RM 604}{Kuramae 4-35-13}{Taito-ku, Tokyo, Japan, 111-0051}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{+4915157012359}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{+818043399496}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 %\phone[fixed]{+2~(345)~678~901}
 %\phone[fax]{+3~(456)~789~012}
 \email{sigefriedhyy@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{kdb-m.org}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{https://www.linkedin.com/in/yuyang-huang-46360092/}                        % optional, remove / comment the line if not wanted
+%\homepage{kdb-m.org}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{https://www.linkedin.com/in/ko-uyo-46360092/}                        % optional, remove / comment the line if not wanted
 %\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
 \social[github]{https://github.com/sigefried}                              % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
@@ -60,7 +60,20 @@
 
 
 \section{Work Experience}
-\cventry{August 2020--Present}{Software Engineer}{Google}{Munich German}{}{
+\cventry{November 2021--Present}{Software Engineer}{Indeed}{Tokyo Japan}{}{
+  \begin{itemize}
+    \item Worked in candidate matching system backend team (team of approx. 12).
+    \item Designed and developed candidate recommendation system for employer
+      in 8 different countries.
+      \begin{itemize}
+        \item Worked on the inference server to improve the scalability by supporting 3x numbers of candidates from the storage perspective.
+        \item Worked on the job feature service to improve the stability of the
+          service and make it scale to support 14x more QPS.
+      \end{itemize}
+  \end{itemize}
+}
+
+\cventry{August 2020--November 2021}{Software Engineer}{Google}{Munich German}{}{
   \begin{itemize}
     \item Worked in Munich Android Auto Development team (team of approx. 8).
     \item Designed and developed vehicle-to-phone connectivity solution.
@@ -108,7 +121,15 @@ Japan}{}{Graduate {S}chool of Information Science and Technology}
 
 \section{Selected Projects}
 
-\cventry{August 2020--Present}{Next-generation phone to vehicle
+\cventry{November 2021--Present}{Candidate matching system backend
+  development which support 8 countries.}{Candidate matching system backend development.}{Java, Kotlin}{}{\textbf{Techniques:} Performance analysis and
+distributed system development.}
+\begin{itemize}
+  \item[--]{Integrated the inference server with amazon dynamoDb as permanent backend storage. Increased the supported candidate count by 3x from the storage perspective.}
+  \item[--]{Did performance analysis on the job feature service. Applied rate limiter and multi-layer caching resolve the performance bottleneck and support 14x more traffic volume.}
+\end{itemize}
+
+\cventry{August 2020--November 2021}{Next-generation phone to vehicle
 connectivity solution.}{Android Auto and AAOS software
   development}{C/C++,Java}{}{\textbf{Techniques:}  Android development,
   performance analysis, system service development.}
@@ -160,9 +181,9 @@ software development.}{C/C++,Python,Golang}{}{\textbf{Techniques:}  Embedded sys
 \cvlistitem{In-depth experience and knowledge of linux security mechanism: discretionary access control, capabilities, namespace, seccomp, cgroups.}
 \cvlistitem{In-depth experience and knowledge of container software: runC and Docker.}
 \cvlistitem{In-depth experience and knowledge of networking stack development.}
-\cvlistitem{In-depth experience and knowledge of open source softwares: Kafka, Elastic Search, Hadoop, Spark.}
-\cvlistitem{Good experience with using Google Cloud.}
-\cvlistitem{Programming languages: C/C++, Java, Python, Assembly, Golang, Ruby/Rails.}
+\cvlistitem{In-depth experience and knowledge of open source softwares: Spring, Kafka, Elastic Search, Hadoop, Spark.}
+\cvlistitem{Good experience with using AWS and Google Cloud.}
+\cvlistitem{Programming languages: C/C++, Java, Kotlin, Python, Assembly, Golang, Ruby/Rails.}
 \cvlistitem{Languages: Chinese(Native), English(Fluent), Japanese(Fluent), German(Beginner)}
 
 \nocite{*}
