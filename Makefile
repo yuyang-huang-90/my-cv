@@ -11,14 +11,9 @@ all: $(TARGETS)
 #view:
 #	open $(PAPER).pdf
 
-$(PAPER).pdf: $(PAPER).tex $(PAPER).bbl
+$(PAPER).pdf: $(PAPER).tex
 	$(TEX) $(PAPER).tex
 	$(TEX) $(PAPER).tex
-
-$(PAPER).bbl: $(PAPER).tex $(BIBFILE)
-	$(TEX) $(PAPER).tex
-	$(BIB) $(PAPER).aux
-
 
 .PHONY: clean all view
 
