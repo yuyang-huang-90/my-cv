@@ -101,6 +101,7 @@ Japan}{Base system research and development team}{
   \begin{itemize}
     \item Integrated the inference server with Amazon DynamoDB as permanent a backend storage which increased the supported candidate count by 3x from the storage perspective.
     \item Introduced rate limiter and multi-layer caching to the job feature service which enlarged the supported traffic volume by 14x.
+    \item Migrated gRPC and HTTPs based legacy APIs to GraphQL based APIs to allow client to customize their queries which further reduced 50\% of unnecessary downstream queries.
   \end{itemize}
 }
 
